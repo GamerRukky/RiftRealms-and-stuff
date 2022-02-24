@@ -1,0 +1,124 @@
+Enabled: true
+Command:
+  Name: bedwars
+  Description: Allows you to see Bedwars1058 Stats
+  # Top Types: kills, deaths, final-deaths/fdeaths, final-kills/fkills
+  # beds-destroyed/beds/beds-broken, games-played/games
+  Usage: bedwars <player/top> <top:stat> <top:page>
+  Aliases: []
+  Type: minecraft
+# This is Bedwars1058 MySql database
+Database:
+  Host: 77.169.190.178
+  Port: "3306"
+  User: u79_pGfxtUIyDT
+  Password: m.1mI@=fsg!0^XFQsukm4P6Y
+  Database: s79_RukkysGlobaDb
+ItemsPerPage: 10
+Format: "**{index}#** `{stat}` - {username}"
+Messages:
+  HelpMenu:
+    Title: 🛏️ Bedwars Help
+    Description: |-
+      ** **
+      These are the following commands for bedwars stats.
+    Fields:
+      - Name: -bedwars <player>
+        Value: "> Displays Player's Stats"
+        Inline: true
+      - Name: -bedwars top help
+        Value: "> Displays Bedwars Top Help menu"
+        Inline: true
+      - Name: -bedwars top <stat> <pageNumber>
+        Value: "> Displays Top 10 leaderboards"
+        Inline: true
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopHelpMenu:
+    Title: 🛏️ Bedwars Top Help
+    Description: |-
+      **To you use these commands**:
+      > `-bedwars top <stat> <pageNumber>`
+
+      These are the stat can be used as `<stat>` parameter.
+    Fields:
+      - Name: Kills
+        Value: "> Displays Top 10 Leaderboard for Kills"
+        Inline: true
+      - Name: Deaths
+        Value: "> Displays Top 10 Leaderboard for Deaths"
+        Inline: true
+      - Name: Final-Deaths / FDeaths
+        Value: "> Displays Top 10 Leaderboard for Final Deaths"
+        Inline: true
+      - Name: "Final-Kills / FKills "
+        Value: "> Displays Top 10 Leaderboard for Final Kills"
+        Inline: true
+      - Name: Beds-Destroyed / Beds / Beds-Broken
+        Value: "> Displays Top 10 Leaderboard for Beds Destroyed"
+        Inline: true
+      - Name: Games-Played / Games
+        Value: "> Displays Top 10 Leaderboard for Games Played"
+        Inline: true
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  PlayerStat:
+    Title: ⚔ {player}'s Bedwars Stats
+    Description: |-
+      ⏲ **Playtime** » {playtime}
+
+      > 🎮 **Games Played** » `{games-played}`
+      > 👑 **Wins** » `{wins}`
+      > 😵 **Looses** » `{looses}`
+      > 🔪 **Kills** » `{kills}`
+      > 🪓 **Final Kills** » `{final-kills}`
+      > 💀 **Deaths** » `{deaths}`
+      > ☠️ **Final Deaths** » `{final-deaths}`
+      > 🛏️ **Beds Broken** » `{beds-destroyed}`
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  PlayerNotFound:
+    Title: Bedwars Stats - Player Not Found
+    Description: Player `{search}` hasn't joined the server yet.
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopKills:
+    Title: 🔪 Bedwars Top Kills [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopDeaths:
+    Title: 💀 Bedwars Top Deaths [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopFinalDeaths:
+    Title: ☠️ Bedwars Top Final Deaths [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopFinalKills:
+    Title: 🪓 Bedwars Top Final Kills [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopBedsBroken:
+    Title: 🛏️ Bedwars Top Beds Broken [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true
+  TopGamesPlayed:
+    Title: 🎮 Bedwars Top Game Played [{currentPage}/{maxPages}]
+    Description: "{data}"
+    Footer: "{user-tag}"
+    FooterIcon: "{user-pfp}"
+    Timestamp: true

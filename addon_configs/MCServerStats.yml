@@ -1,0 +1,34 @@
+Enabled: true
+# Inverval in Seconds
+Permission: Staff
+UpdateInterval: 60
+Servers:
+  Proxy: sub.domain.tld
+  Hub: sub.domain.tld:25566
+  Bedwars: sub.domain.tld:25567
+  Survival: sub.domain.tld:25586
+  Skywars: sub.domain.tld:25568
+  KitPvP: sub.domain.tld:25569
+  Practice: sub.domain.tld:25578
+  Factions: sub.domain.tld:25573
+  ThePit: sub.domain.tld:25580
+  Parkour: sub.domain.tld:25589
+  TheBridge: sub.domain.tld:25570
+  Skyblock: sub.domain.tld:25576
+  HideAndSeek: sub.domain.tld:25584
+Text:
+  Online: 🟢
+  Offline: 🔴
+PlayerCount: » {playerCount} Players Online
+StatusLayout: • **{serverName}** » \{status} {playerCount}
+StatusEmbed:
+  Title: RiftRealms Server Status
+  Fields:
+    - Name: Server Info
+      Value: |-
+        • play.riftrealms.net
+        • 1.8.8 - 1.17.1
+    - Name: Server Status
+      Value: "{serverStatus}"
+  Footer: Updates every 1 Minute | Last Updated
+  Timestamp: true

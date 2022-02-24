@@ -1,0 +1,46 @@
+Enabled: true
+Settings:
+  Suggestions:
+    - Command:
+        Name: suggestrust
+        Description: Suggest Something for Our Rust server!
+        Usage: suggestrust <suggestion>
+        Aliases: []
+        # There are 13 types of Types
+        # admin, coins, exp, fun, mod
+        # other, staff, tickets, utils
+        # general, giveaways, management, minecraft
+        Type: general
+      Permission: "@everyone"
+      Manager_Permission: Developer
+      # Reactions to manage suggestion.
+      Channel:
+        Suggestion: stest
+        Accepted: stest2
+        Denied: stest2
+        Implemented: stest2
+      Reactions:
+        Upvote: ✅
+        Downvote: ❌
+        Accepted: ⭐
+        Denied: 🔒
+        Implemented: 🛠
+      Prefix:
+        Accepted: ➝ Accepted
+        Denied: ➝ Denied
+        Implemented: ➝ Implemented
+      Embed:
+        Title: Rust Suggestion
+        Fields:
+          - Name: Suggestion
+            Value: "{suggestion}"
+            Inline: true
+          - Name: From
+            Value: "{user-mention}({user-id})"
+            Inline: true
+        Thumbnail: "{user-pfp}"
+        Timestamp: true
+Messages:
+  Suggestion_Sent:
+    Title: Suggestion Sent
+    Description: ✅ Your suggestion has successfully been sent!
